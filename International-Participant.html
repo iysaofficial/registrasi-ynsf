@@ -496,7 +496,7 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then((response) =>
           $('#form_alerts').html(
-            "<div class='alert alert-success'>Data sent successfully, Wait for the registration confirmation email to be sent to the team leader's email.</div>"
+            "<div class='alert alert-success'>Data sent successfully, Wait for 3 days from the time of registration LoA will be sent to the team leader's email.</div>"
           )
         )
         .catch((error) =>
