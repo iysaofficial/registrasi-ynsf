@@ -59,7 +59,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   overflow-x: hidden;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(-135deg, #0000FF, #696969);
 }
 
 .wrapper {
@@ -88,7 +88,7 @@ body {
   font-weight: bold;
   border-radius: 20px;
   padding: 5px;
-  background: linear-gradient(135deg, #9b59b6, #71b7e6);
+  background: linear-gradient(-135deg, #0000FF, #696969);
 }
 
 .wrapper h3 {
@@ -140,14 +140,8 @@ a {
 
 .btn--primary:hover {
   color: #ffffff;
-  background-image: linear-gradient(
-    to right,
-    #25aae1,
-    #40e495,
-    #30dd8a,
-    #2bb673
-  );
-  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  background: linear-gradient(-135deg, #0000FF, #696969);
+  box-shadow: 0 4px 15px 0 rgba(245,245,245);
 }
 
 .btn--accent {
