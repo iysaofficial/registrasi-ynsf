@@ -47,7 +47,7 @@ function IndonesiaOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "Youth National Science Fair - Online Competition":
-        setCategoryPrice("RP 900.000");
+        setCategoryPrice("RP 1.150.000");
         break;
       default:
         break;
@@ -58,11 +58,12 @@ function IndonesiaOnline() {
     const termsAccepted = sessionStorage.getItem("termsAccepted");
     if (!termsAccepted) {
       alert("Anda harus menyetujui Syarat & Ketentuan terlebih dahulu.");
-      router("/registration/homeindo"); // Navigasi ke halaman HomeIndo
+      router.push("/"); // Navigasi ke halaman HomeIndo
     }
   }, [router]);
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbzc14fWlk4OWj25LFWIbopBbCymLma9HDim5kVKWizPV6BcV2LLGsBjzzquwpov_j9fcA/exec";
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbzc14fWlk4OWj25LFWIbopBbCymLma9HDim5kVKWizPV6BcV2LLGsBjzzquwpov_j9fcA/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -223,7 +224,7 @@ function IndonesiaOnline() {
                     name="CATEGORY_PARTICIPANT"
                     className="form-control"
                     placeholder="Choose Categories Participant"
-                    value="PESERTA INDONESIA"
+                    value="INDONESIA"
                     readOnly
                   />
                 </div>
@@ -412,12 +413,11 @@ function IndonesiaOnline() {
                     required
                   >
                     <option value="">--Pilih Jenjang Pendidikan Anda--</option>
-                    <option value="Sekolah Dasar">Sekolah Dasar</option>
-                    <option value="Sekolah Menengah Pertama">
-                      Sekolah Menengah Pertama
+                    <option value="Sekolah Dasar">
+                      Sekolah Dasar atau Sederajat
                     </option>
-                    <option value="Sekolah Menengah Atas">
-                      Sekolah Menengah Atas
+                    <option value="Sekolah Menengah">
+                      Sekolah Menengah (SMP, SMA, MA, MTS atau Sederajat)
                     </option>
                     <option value="Universitas">Universitas</option>
                   </select>
@@ -547,16 +547,11 @@ function IndonesiaOnline() {
                     required
                   >
                     <option value="">--Pilih Kategori--</option>
-                    <option value="Technology">Technology</option>
-                    <option value="Mathematics">Mathematics</option>
                     <option value="Social Science">Social Science</option>
-                    <option value="Environment">Environment</option>
-                    <option value="Life Science">Life Science</option>
-                    <option value="Physic">Physic</option>
-                    <option value="Education">Education</option>
-                    <option value="Energy and Engineering">
-                      Energy and Engineering
-                    </option>
+                    <option value="Life Sciences">Life Sciences</option>
+                    <option value="Environmental Science">Environmental Science</option>
+                    <option value="Innovation Science">Innovation Science</option>
+                    <option value="Engineering">Engineering</option>
                   </select>
                 </div>
 
