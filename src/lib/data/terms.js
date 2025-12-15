@@ -13,9 +13,10 @@ export const indonesiaOnlineTerms = (
         saja.
       </li>
       <li>
-        Peserta wajib menggunakan judul dan extended abstract yang sesuai dengan
-        kategori yang diikuti. (Peserta internasional, wajib menggunakan bahasa
-        Inggris untuk seluruh persyaratan dokumen yang dibutuhkan)
+        Peserta wajib menggunakan judul dan full paper yang sesuai dengan
+        kategori yang diikuti. (untuk peserta yang mengikuti event tingkat
+        internasional, wajib menggunakan bahasa Inggris untuk seluruh
+        requirement)
       </li>
       <li>
         Keputusan panitia terkait hal ini bersifat final dan tidak dapat
